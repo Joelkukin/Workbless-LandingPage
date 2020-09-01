@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+//////////////////////////////////////////////// 
+//                      @global 
+
+@mixin fondo ($img) {
+   background: url($img);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+}
+
+.white {
+   color: white;
+}
+
+//////////////////////////////////////////////// 
+//                        @main 
+$raleway: 'Raleway',
+sans-serif;
+
+* {
+   font-family: $raleway;
+   color: black;
+}
+
+header {
+   background: url(../Assets/workbless.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+}
+
+h2 {
+   font-size: 6rem;
+}
+
+section {
+   padding: 75px 150px;
+}
+
+// NAVBAR
+
+nav {
+   background: black;
+
+   & ul {
+      list-style: none;
+
+      div.d-flex {
+         justify-content: space-around;
+
+         li {
+            margin: 1rem 2rem;
+         }
+      }
+   }
+}
+
+// SLOGAN
+
+
+#slogan {
+   @include fondo("../Assets/header1.jpg");
+
+   & .text {
+      position: absolute;
+      bottom: 0px;
+      margin: 100px;
+      width: 700px;
+
+      & h3 {
+         font-size: 6rem;
+      }
+   }
+}
+
+//    LA PUBLICIDAD COMO NEGOCIO
+
+#modeloDeNegocio {
+   @include fondo("../Assets/fondo-google.jpg");
+
+}
+
+//    LA IDEA ES MUY SIMPLE
+
+#la-idea-es-muy-simple {
+   @include fondo("../Assets/facebook-likes.jpg");
+}
+
+//    COMO COMIENZO
+
+#como-comienzo {
+   @include fondo("../Assets/como-comienzo.jpg");
+}
+
+#planes-basicos,
+#planes-fundador {
+   @include fondo("../Assets/fondo-paquetes.jpg");
+   background-position: bottom;
+}
+
+section.slogan{
+   @include fondo("../Assets/trabajo-en-equipo.jpg");
+   .display-4,b{color: white;}
+}

@@ -1,0 +1,12 @@
+nav {
+  background: black;
+}
+
+#slogan {
+  background: url("../Assets/header1.jpg");
+}
+#slogan .text {
+  position: absolute;
+  bottom: 0px;
+  margin: 50px;
+}

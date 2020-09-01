@@ -1,7 +1,107 @@
-.card{
-    max-width: 15rem;
-}
-.remuneracion, .card{
-    
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+.white {
+  color: white;
 }
 
+* {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+header {
+  background: url(../Assets/workbless.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+section {
+  padding: 75px 150px;
+}
+
+nav {
+  background: black;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul div.d-flex {
+  justify-content: space-around;
+}
+
+nav ul div.d-flex li {
+  margin: 1rem 2rem;
+}
+
+#slogan {
+  background: url("../Assets/header1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#slogan .text {
+  position: absolute;
+  bottom: 0px;
+  margin: 100px;
+  width: 700px;
+}
+
+#slogan .text h3 {
+  font-size: 6rem;
+}
+
+#modeloDeNegocio {
+  background: url("../Assets/fondo-google.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#la-idea-es-muy-simple {
+  background: url("../Assets/facebook-likes.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#como-comienzo {
+  background: url("../Assets/como-comienzo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#planes-basicos,
+#planes-fundador {
+  background: url("../Assets/fondo-paquetes.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-position: bottom;
+}
+
+section.slogan {
+  background: url("../Assets/trabajo-en-equipo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+section.slogan .display-4, section.slogan b {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
